@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #5b0707;
+  --secondary-color: 240, 228, 228;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--secondary-color));
+  color: rgb(0, 0, 0);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+}
+
+.navigation {
+  background-color: #202020;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 1.2rem;
+}
+
+.navigation-item,
+.footer-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation-item:hover,
+.footer-item:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(img/hero_5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Karla", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  color: rgb(var(--secondary-color));
+}
+
+.subtitle {
+  margin: 0.8rem 0 0 0;
+  color: rgb(209, 209, 209);
+}
+
+.button,
+.button-inverted {
+  width: fit-content;
+  display: inline-block;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
+  display: block;
+}
+
+.button-inverted {
+  background-color: rgb(var(--secondary-color));
+  color: var(--primary-color);
+}
+
+.menu-nav .button-inverted {
+  width: 4rem;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.button:hover {
+  background-color: rgb(var(--secondary-color));
+  color: var(--primary-color);
+}
+
+.button-inverted:hover {
+  background-color: var(--primary-color);
+  color: rgb(var(--secondary-color));
+}
+
+.hero-button {
+  margin: 4rem 0 0 0;
+}
+
+.about {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-bottom: 3px solid var(--primary-color);
+  width: fit-content;
+  font-size: 1.5rem;
+}
+
+.about .heading {
+  margin: 2rem 0 0.7rem 0;
+}
+
+.about-text {
+  font-size: 0.85rem;
+}
+
+.about-button {
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+.about-gallery {
+  width: 100%;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-img-large {
+  min-width: 50%;
+}
+
+.about-img-small {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.opening-bg {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/info.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+.opening-information .heading {
+  color: rgb(var(--secondary-color));
+  margin: 0 0 0.7rem 0;
+}
+
+.opening-information {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.opening-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.opening-day {
+  text-align: left;
+  color: rgb(var(--secondary-color));
+}
+.opening-time:nth-of-type(2) {
+  color: rgb(var(--secondary-color));
+}
+
+.opening-time {
+  text-align: right;
+  color: rgb(209, 209, 209);
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-img,
+.menu-img {
+  width: 100%;
+}
+
+.contact .heading {
+  margin-bottom: 0.7rem;
+}
+
+.contact-data {
+  margin-top: 0.3rem;
+}
+
+.contact-action {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 0.7rem;
+}
+
+.footer {
+  background-color: #202020;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  color: rgb(var(--secondary-color));
+}
+
+@media only screen and (min-width: 600px) {
+  .navigation,
+  .footer-links {
+    gap: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .button,
+  .button-inverted {
+    padding: 1.1rem 2.1rem;
+  }
+
+  .menu-nav .button-inverted {
+    font-size: 1.1rem;
+    width: 5rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-img {
+    width: 60%;
+  }
+
+  .footer {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .navigation,
+  .footer-links {
+    gap: 5rem;
+  }
+
+  .title {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 2rem;
+  }
+
+  .heading:not(.menu-category .heading) {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+
+  .about-gallery,
+  .about-img-small {
+    gap: 1rem;
+  }
+
+  .opening-bg {
+    margin: 8rem 0;
+    padding: 7rem 0 7rem 0;
+  }
+
+  .opening-dates {
+    font-size: 1.4rem;
+  }
+
+  .contact-img {
+    width: 50%;
+  }
+
+  .contact .heading {
+    margin-bottom: 2rem;
+  }
+
+  .contact-data {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .contact-action {
+    flex-direction: row;
+  }
+
+  .footer {
+    margin-top: 8rem;
+    padding: 4rem 0;
+    gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about {
+    max-width: 1200px;
+  }
+
+  .contact {
+    max-width: 1200px;
+  }
+}
