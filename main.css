@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #5b0707;
-  --secondary-color: 240, 228, 228;
+  --primary-color: #620505;
+  --secondary-color: 255, 250, 250;
   scroll-behavior: smooth;
 }
 
@@ -19,13 +19,14 @@ body {
 }
 
 .navigation {
-  background-color: #202020;
-  height: 5rem;
+  background-color: rgb(var(--secondary-color));
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.8rem;
   font-size: 0.8rem;
+  font-weight: 450;
   text-align: center;
   padding: 0 1.2rem;
 }
@@ -34,14 +35,14 @@ body {
 .footer-item {
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--primary-color);
   letter-spacing: 0.1rem;
   transition: all 0.2s ease-in-out;
 }
 
 .navigation-item:hover,
 .footer-item:hover {
-  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .hero {
@@ -56,7 +57,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +238,8 @@ body {
 }
 
 .footer {
-  background-color: #202020;
+  background-color: rgb(var(--secondary-color));
+  border-top: 1.5px solid var(--primary-color);
   margin-top: 2rem;
   padding: 2rem 0;
   display: flex;
@@ -258,7 +260,7 @@ body {
 }
 
 .footer-copyright {
-  color: rgb(var(--secondary-color));
+  color: var(--primary-color);
 }
 
 @media only screen and (min-width: 600px) {
